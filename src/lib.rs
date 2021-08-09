@@ -1,3 +1,5 @@
+pub use assets::AssetImage;
+
 mod screen;
 mod image;
 mod color;

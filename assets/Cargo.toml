@@ -1,11 +1,17 @@
 [package]
-name = "wasm-canvas-rs"
+name = "assets"
 version = "0.1.0"
 authors = ["NaokiM03 <naokim03.lib+dev@gmail.com>"]
 edition = "2018"
 
-[dependencies]
-serde = { version = "1.0.127", features = ["derive"] }
-serde_json = "1.0.62"
+[lib]
+proc-macro = true
 
-assets = { version = "0.1.0", path = "assets" }
+[dependencies]
+syn = "1.0.74"
+quote = "1.0.9"
+proc-macro2 = "1.0.28"
+walkdir = "2.3.1"
+image = "0.23.14"
+serde = { version = "1.0.127", features = ["derive"] }
+serde_json = "1.0.66"
